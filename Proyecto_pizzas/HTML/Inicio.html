@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pizza</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">The Pizza</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="/imagenes/menu-icon.png" class="menu-icono" alt="Icono del menú">
+            </label>
+            <nav class="nav">
+                <ul>
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="Servicios.html">Servicios</a></li>
+                    <li class="submenu">
+                        <a href="#">Acerca de</a>
+                        <ul class="submenu-content">
+                            <li><a href="#">¿Quiénes somos?</a></li>
+                            <li><a href="#">Nuestra historia</a></li>
+                            <li><a href="#">Misión y visión</a></li>
+                            <li><a href="#">Valores corporativos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="Registro.html">Registrarse</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="/imagenes/carrito-icon.svg" id="img-carrito" alt="Carrito de compra">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar el carrito</a>
+                            <a href="/HTML/Comprar.html" id="comprar-carrito" class="btn-2">Comprar</a> <!--Corregir el apartado de la compra-->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-content container"></div>
+        <div class="header-txt">
+            <h1>THE PIZZA</h1>
+            <p>Visualiza y escoge las mejores pizzas</p>
+            <div class="dropdown">
+                <button class="btn-1" onclick="toggleDropdown()">Información</button>
+                <div class="dropdown-content" id="dropdownContent">
+                    <p>Parara tararara The pizza presenta... La mejor calidad del mundou.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="titulo1"><h1>LO MÁS VENDIDO</h1></div>
+    <section class="ofert container">
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="/imagenes/pizza-peperoni.jpg" alt="Pizza de peperoni">
+            </div>
+            <div class="ofert-text">
+                <h3>Pizza de peperoni</h3>
+            </div>
+        </div>
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="/imagenes/pizza-vegetariana.jpg" alt="Pizza vegetariana">
+            </div>
+            <div class="ofert-text">
+                <h3>Pizza vegetariana</h3>
+            </div>
+        </div>
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="/imagenes/pizza-champi.jpg" alt="pizza1">
+            </div>
+            <div class="ofert-text">
+                <h3>Pizza de champiñon</h3>
+            </div>
+        </div>
+    </section>
+    <main class="products container" id="lista-1">
+        <h2>PIZZAS</h2>
+        <div class="product-content">
+            <div class="product">
+                <img src="/imagenes/pizza-italiana.jpg" alt="Pizza italiana">
+                <div class="product-txt">
+                    <h3>Pizza italiana</h3>
+                    <p>Deliciosa y única</p>
+                    <p class="precio">$586.00</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/imagenes/pizza-mix.jpg" alt="Pizza mix">
+                <div class="product-txt">
+                    <h3>Pizza mixta</h3>
+                    <p>Vegetariana mixta</p>
+                    <p class="precio">$456.00</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/imagenes/pizza-edition.jpg" alt="Pizza corazon">
+                <div class="product-txt">
+                    <h3>Pizza edición especial</h3>
+                    <p>Edición corazón</p>
+                    <p class="precio">$800.00</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/imagenes/Pizza-chile.jpg" alt="Pizza de chile">
+                <div class="product-txt">
+                    <h3>Pizza con chile</h3>
+                    <p>Chile habanero</p>
+                    <p class="precio">$150.52</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/imagenes/pizza-margarita.jpg" alt="Pizza de margaritas">
+                <div class="product-txt">
+                    <h3>Pizza de margarita</h3>
+                    <p>Únete a esta delicia</p>
+                    <p class="precio">$289.99</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/imagenes/pizza-mozzarella.jpg" alt="Pizza de mozzarella">
+                <div class="product-txt">
+                    <h3>Pizza de mozzarella</h3>
+                    <p>Queso mozzarella y con tocino</p>
+                    <p class="precio">$250.77</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/imagenes/pizza-peperoni.jpg" alt="Pizza de mozzarella">
+                <div class="product-txt">
+                    <h3>Pizza de peperoni</h3>
+                    <p>Peperoni con queso</p>
+                    <p class="precio">$100.00</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/imagenes/pizza-vegetariana.jpg" alt="Pizza de peperoni">
+                <div class="product-txt">
+                    <h3>Pizza vegetariana</h3>
+                    <p>Pensamos en tí</p>
+                    <p class="precio">$259.99</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="8">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/imagenes/pizza-champi.jpg" alt="Pizza de champiñon">
+                <div class="product-txt">
+                    <h3>Pizza de champiñon</h3>
+                    <p>Fuchi, esa económica</p>
+                    <p class="precio">$80.00</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="9">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Información del contacto</h3>
+                <ul>
+                    <li><a href="#">thepizza@gmail.com</a></li>
+                    <li><a href="#">9992849567</a></li>
+                    <li><a href="#">Totopac c-102 #23</a></li>
+                    <li><a href="#">San Luis</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Términos y condiciones</h3>
+                <ul>
+                    <li><a href="#">Leer</a></li>
+                    <li><a href="#">Robo</a></li>
+                    <li><a href="#">Comida</a></li>
+                    <li><a href="#">LLanto interno</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>¿Qué hacemos?</h3>
+                <ul>
+                    <li><a href="#">Venta de pizzas</a></li>
+                    <li><a href="#">Información de pizzas</a></li>
+                    <li><a href="#">Llorar en inglés</a></li>
+                    <li><a href="#">Y como llorar en español</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="/JS/script.js"></script>
+</body>
+</html>

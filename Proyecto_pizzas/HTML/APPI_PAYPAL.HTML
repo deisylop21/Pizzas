@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pago con PayPal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .payment-container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+        }
+        .payment-container h2 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Realizar Pago</h2>
+        <div id="paypal-button-container"></div>
+    </div>
+
+    <!-- Incluye el SDK de PayPal -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AYbmN_wr9BrX3knxBO7NqVRNnIAFbl21cmwdzOVvPTsos_qLjQIxauux_9-TtW0ei11WPlQYOOPL2GfS&currency=USD"></script>
+    <script>
+        paypal.Buttons({
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: '0.01' // Aquí especificas el monto a pagar
+                        }
+                    }]
+                });
+            },
+            onApprove: function(data, actions) {
+                return actions.order.capture().then(function(details) {
+                    alert('Pago realizado por ' + details.payer.name.given_name);
+                    // Aquí puedes redirigir al usuario a otra página o realizar alguna acción adicional
+                });
+            }
+        }).render('#paypal-button-container');
+    </script>
+</body>
+</html>

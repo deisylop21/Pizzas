@@ -1,0 +1,102 @@
+/* Reset de estilos y configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el body y el HTML */
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #151414; /* Color de fondo oscuro */
+    color: #fff; /* Color de texto blanco */
+}
+
+/* Estilos para el header */
+.header {
+    background-color: #C21807; /* Color de fondo para el header */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px; /* Añadido margen inferior */
+}
+
+.header p {
+    font-size: 1.2em;
+    margin-bottom: 20px; /* Añadido margen inferior */
+}
+
+/* Estilos para el contenido principal */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.payment {
+    padding: 40px 0;
+    text-align: center; /* Centrado del contenido */
+}
+
+.payment h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.payment-methods {
+    margin-bottom: 40px;
+}
+
+.payment-methods h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #C21807; /* Color de fondo para los botones */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn-2:hover {
+    background-color: #8C0D02; /* Cambio de color al pasar el ratón */
+}
+
+/* Estilos para el formulario de pago con tarjeta */
+#card-payment-form {
+    margin-top: 20px;
+    text-align: center; /* Centrado del contenido */
+}
+
+#card-payment-form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+#card-payment-form input[type="text"] {
+    width: calc(100% - 20px); /* Ajuste para evitar desbordamiento */
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #333; /* Color de fondo para el footer */
+    padding: 20px 0;
+    text-align: center;
+    color: #fff; /* Color de texto blanco para el footer */
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra - The Pizza</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">The Pizza</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="/imagenes/menu-icon.png" class="menu-icono" alt="Icono del menú">
+            </label>
+            <nav class="nav">
+                <ul>
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="Servicios.html">Servicios</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="Registro.html">Registrarse</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container"></div>
+        <div class="header-txt">
+            <h1>Compra</h1>
+            <p>Finaliza tu compra</p>
+        </div>
+    </header>
+    <main class="products container">
+        <h2>Tu pedido</h2>
+        <div class="product-content" id="compra-lista">
+            <!-- Aquí se mostrarán los productos del carrito -->
+        </div>
+
+        <!-- Nueva sección para método de entrega -->
+        <div id="metodo-entrega">
+            <h3>Selecciona tu método de entrega</h3>
+            <button onclick="location.href='recoger_tienda.html'" class="btn-2">Recoger en tienda</button>
+            <button onclick="location.href='servicio_domicilio.html'" class="btn-2">Servicio a domicilio</button>
+        </div>
+        
+        <!-- Sección de pago oculta inicialmente -->
+        <div id="seccion-pago" style="display: none;">
+            <h3>Detalles del pago</h3>
+            <!-- Aquí puedes añadir los detalles y botones de pago -->
+            <button class="btn-2" onclick="irAPago()">Finalizar Compra</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Información del contacto</h3>
+                <ul>
+                    <li><a href="#">thepizza@gmail.com</a></li>
+                    <li><a href="#">9992849567</a></li>
+                    <li><a href="#">Totopac c-102 #23</a></li>
+                    <li><a href="#">San Luis</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Términos y condiciones</h3>
+                <ul>
+                    <li><a href="#">Leer</a></li>
+                    <li><a href="#">Robo</a></li>
+                    <li><a href="#">Comida</a></li>
+                    <li><a href="#">LLanto interno</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>¿Qué hacemos?</h3>
+                <ul>
+                    <li><a href="#">Venta de pizzas</a></li>
+                    <li><a href="#">Información de pizzas</a></li>
+                    <li><a href="#">Llorar en inglés</a></li>
+                    <li><a href="#">Y como llorar en español</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="/JS/comprar.js"></script>
+</body>
+</html>

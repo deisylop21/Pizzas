@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago - The Pizza</title>
+    <link rel="stylesheet" href="/CSS/Pago.css">
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID"></script> <!-- Reemplaza 'YOUR_PAYPAL_CLIENT_ID' con tu ID de cliente de PayPal -->
+</head>
+<body>
+    <header class="header">
+        <!--<div class="menu container">
+            <a href="#" class="logo">The Pizza</a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="Servicios.html">Servicios</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="Registro.html">Registrarse</a></li>
+                </ul>
+            </nav>
+        </div>-->
+        <div class="header-content container">
+            <h1>Pago</h1>
+            <p>Finaliza tu compra</p>
+        </div>
+    </header>
+    <main class="payment container">
+        <h2>Información de Pago</h2>
+        <div class="payment-methods">
+            <h3>Selecciona el método de pago</h3>
+            <div id="paypal-button-container"></div>
+            <button class="btn-2" onclick="pagarConTarjeta()">Pagar con Tarjeta</button>
+        </div>
+        <form id="card-payment-form" style="display: none;">
+            <h3>Pago con Tarjeta</h3>
+            <label for="card-number">Número de Tarjeta</label>
+            <input type="text" id="card-number" required>
+            <label for="card-expiry">Fecha de Expiración</label>
+            <input type="text" id="card-expiry" required>
+            <label for="card-cvc">CVC</label>
+            <input type="text" id="card-cvc" required>
+            <button type="submit" class="btn-2">Finalizar Pago</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="footer-content container">
+            <!-- Información del footer -->
+        </div>
+    </footer>
+    <script src="/JS/Pago.js"></script>
+</body>
+</html>

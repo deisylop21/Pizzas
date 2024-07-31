@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recoger en tienda - The Pizza</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">The Pizza</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="/imagenes/menu-icon.png" class="menu-icono" alt="Icono del menú">
+            </label>
+            <nav class="nav">
+                <ul>
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="Servicios.html">Servicios</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="Registro.html">Registrarse</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container"></div>
+        <div class="header-txt">
+            <h1>Recoger en tienda</h1>
+            <p>Completa tu información para recoger tu pedido en tienda</p>
+        </div>
+    </header>
+    <main class="container">
+        <form id="recoger-tienda-form" class="form">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <button type="submit" class="btn-2">Confirmar</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Información del contacto</h3>
+                <ul>
+                    <li><a href="#">thepizza@gmail.com</a></li>
+                    <li><a href="#">9992849567</a></li>
+                    <li><a href="#">Totopac c-102 #23</a></li>
+                    <li><a href="#">San Luis</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Términos y condiciones</h3>
+                <ul>
+                    <li><a href="#">Leer</a></li>
+                    <li><a href="#">Robo</a></li>
+                    <li><a href="#">Comida</a></li>
+                    <li><a href="#">LLanto interno</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>¿Qué hacemos?</h3>
+                <ul>
+                    <li><a href="#">Venta de pizzas</a></li>
+                    <li><a href="#">Información de pizzas</a></li>
+                    <li><a href="#">Llorar en inglés</a></li>
+                    <li><a href="#">Y como llorar en español</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="/JS/recoger_tienda.js"></script>
+</body>
+</html>

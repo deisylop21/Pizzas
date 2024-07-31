@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="/CSS/Servicios.css">
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">The Pizza</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="imagenes/menu-icon.png" class="menu-icono" alt="Icono del menú">
+            </label>
+            <nav class="nav">
+                <ul>
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="Servicios.html">Servicios</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="Registro.html">Registrarse</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+           <!-- <div class="header-img">
+                <img src="imagenes/pizza-steve.png" alt="Banner">
+            </div>-->
+        </div>
+        <div class="header-txt">
+            <h1>THE PIZZA</h1>
+            <p>Solicita tu servicio de compra</p>
+            <div class="dropdown">
+                <button class="btn-1" onclick="toggleDropdown()">Información</button>
+                <div class="dropdown-content" id="dropdownContent">
+                    <p>En The Pizza puedes elegir el tipo de envío que necesites.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="titulo">
+        <h2>Un servicio rapido y seguro</h2>
+    </div>
+    <main class="products">
+        <!--Actualizar las cards, agragando el servicio que se desea ofrecer-->
+        <div class="product-content">
+            <div class="product">
+                <img src="/imagenes/domicilio.jpg" alt="Servicio a domicilio">
+                <div class="product-txt">
+                    <h3>Servicio a domicilio</h3>
+                    <p>Ordena online y recibe a domicilio</p>
+                    <input type="text" placeholder="Ingresa tu calle y número" class="direccion-input">
+                    <button class="btn-ordenar">Ordena Ahora</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/imagenes/steve1.jpg" alt="Recoger en tienda">
+                <div class="product-txt">
+                    <h3>Recoger en tienda</h3>
+                    <p>Ordena online y recoge en tienda</p>
+                    <input type="text" placeholder="Ingresa tu CP o colonia" class="direccion-input">
+                    <button class="btn-ordenar">Ordena Ahora</button>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <script src="/JS/Servicios.js"></script>
+</body>
+</html>
